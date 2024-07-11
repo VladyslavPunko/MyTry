@@ -1,20 +1,4 @@
-.container {
-  display: flex;
-  gap: 20px;
-}
-
-.left {
-  width: 672px;
-  height: 736px;
-  border: 1px solid white;
-}
-
-.raight {
-  width: 672px;
-  height: 736px;
-  border: 1px solid white;
-}
-.sign-up-container {
+.sign-in-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +6,7 @@
   background-color: #f0eff4;
 }
 
-.sign-up-form {
+.sign-in-form {
   display: flex;
   background-color: #ffffff;
   border-radius: 10px;

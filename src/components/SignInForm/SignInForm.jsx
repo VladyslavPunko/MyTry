@@ -46,11 +46,11 @@ const SignInForm = () => {
   };
 
   return (
-    <div className="sign-up-container">
-      <div className="sign-up-form">
+    <div className="sign-in-container">
+      <div className="sign-in-form">
         <div className="form-section">
           <form onSubmit={handleSubmit(onSubmit)}>
-            <h2>Sign Up</h2>
+            <h2>Sign In</h2>
             <div className="input-container">
               <label>Email</label>
               <input
@@ -71,33 +71,18 @@ const SignInForm = () => {
                 className="toggle-password"
                 onClick={togglePasswordVisibility}
               >
-                {showPassword ? "👁️" : "👁️"}
+                {showPassword ? "☆" : "☆"}
               </span>
               {errors.password && <p>{errors.password.message}</p>}
             </div>
-            <div className="input-container">
-              <label>Repeat password</label>
-              <input
-                type={showPassword ? "text" : "password"}
-                placeholder="Repeat password"
-                {...register("repeatPassword")}
-              />
-              <span
-                className="toggle-password"
-                onClick={togglePasswordVisibility}
-              >
-                {showPassword ? "👁️" : "👁️"}
-              </span>
-              {errors.repeatPassword && <p>{errors.repeatPassword.message}</p>}
-            </div>
-            <button type="submit">Sign Up</button>
+
+            <button type="submit">Sign In</button>
             <p>
               Already have an account? <a href="/signup">Sign Up</a>
             </p>
           </form>
         </div>
         <div className="image-section">
-          {/* Тимчасова рамка для зображення */}
           <div
             style={{ width: "100%", height: "100%", backgroundColor: "#ccc" }}
           ></div>
